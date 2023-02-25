@@ -71,7 +71,7 @@ importers:
       textlint-rule-no-empty-section: ^1.1.0
       textlint-rule-no-start-duplicated-conjunction: ^2.0.2
       textlint-rule-no-surrogate-pair: ^1.0.1
-      textlint-rule-period-in-list-item: ^0.3.2
+      textlint-rule-period-in-list-item: ^1.0.0
       textlint-rule-stop-words: ^3.0.0
       textlint-rule-terminology: ^2.1.4
       textlint-rule-unexpanded-acronym: ^1.2.4
@@ -147,7 +147,7 @@ importers:
       textlint-rule-no-empty-section: 1.1.0
       textlint-rule-no-start-duplicated-conjunction: 2.0.2
       textlint-rule-no-surrogate-pair: 1.0.1
-      textlint-rule-period-in-list-item: 0.3.3
+      textlint-rule-period-in-list-item: 1.0.1
       textlint-rule-stop-words: 3.0.1
       textlint-rule-terminology: 2.1.6
       textlint-rule-unexpanded-acronym: 1.2.4
@@ -514,9 +514,6 @@ packages:
     peerDependencies:
       '@algolia/client-search': '>= 4.9.1 < 6'
       algoliasearch: '>= 4.9.1 < 6'
-    peerDependenciesMeta:
-      '@algolia/client-search':
-        optional: true
     dependencies:
       '@algolia/autocomplete-shared': 1.7.4
       algoliasearch: 4.14.3
@@ -3415,6 +3412,7 @@ packages:
 
   /bindings/1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
+    requiresBuild: true
     dependencies:
       file-uri-to-path: 1.0.0
     dev: true
@@ -3911,8 +3909,8 @@ packages:
     resolution: {integrity: sha512-yrLQ/yVUFXkzg7EDQsPieE/53+0RlaWTs+wBrvW36cyilJ2SaDWfl4Yj7MtLTXleV9uEKefbAGUPv2/iWSooRA==}
     dev: true
 
-  /check-ends-with-period/2.0.1:
-    resolution: {integrity: sha512-ZXEB+OLEAnRu9JCt/aMHNU9Q/BNYDCJrhcQli+JN95K08rGGEMVZc+W75/op8JyKrCKk/WV8Whuo8qjLIDcPeA==}
+  /check-ends-with-period/3.0.2:
+    resolution: {integrity: sha512-/Bw+avucqqZ7PjKCVDod1QDGyZjo7Ht2701pdgcpTXzK5jI73/OUh3VR+m18jNUoJx5DSOUv0AxELZF7FYtcDA==}
     dependencies:
       emoji-regex: 10.2.1
     dev: true
@@ -5597,6 +5595,7 @@ packages:
 
   /file-uri-to-path/1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -8137,6 +8136,7 @@ packages:
 
   /nan/2.17.0:
     resolution: {integrity: sha512-2ZTgtl0nJsO0KQCjEpxcIr5D+Yv90plTitZt9JBfQvVJDS5seMl3FOvsh3+9CoYWXf/1l5OaZzzF6nDm4cagaQ==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -10827,10 +10827,10 @@ packages:
     resolution: {integrity: sha512-YwdvoBzUh/xiHgiyEEIw1IdD1yjs2GGr2UlE2tAdIF5aiqOVEy/gKg79xKp0cPO8c4DOOObmKvKTgs9Zv1tlNA==}
     dev: true
 
-  /textlint-rule-period-in-list-item/0.3.3:
-    resolution: {integrity: sha512-XVm7E2riBggmyMPiLPQZwXxwFngi5WozWrZqctjN43uz9GykOyrqaHACGsLou2cJqa6nwQxqxewl2OOf/G64eA==}
+  /textlint-rule-period-in-list-item/1.0.1:
+    resolution: {integrity: sha512-dNPa4WzePcgsz8A+CxFGQgKNZCEvjjwMCu3DFcpYB4eKuhcSISEiS/mvEO42oGAALJluYdYVZxN3yMD6XzkLBA==}
     dependencies:
-      check-ends-with-period: 2.0.1
+      check-ends-with-period: 3.0.2
     dev: true
 
   /textlint-rule-stop-words/3.0.1:
